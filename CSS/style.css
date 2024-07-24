@@ -1,0 +1,57 @@
+<style>
+
+body{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: blueviolet;
+    color: antiquewhite;
+    }
+
+h1, h2{
+    color: #ff0000;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+}
+
+.destaque{
+    background-color: yellowgreen;
+    color: #ff0000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header{
+    background-color: gray;
+}
+
+main{
+    margin: auto 5%;
+    background-color: aquamarine;
+}
+
+#img-logo{
+    width: 70px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 20px;
+    color: rgb(25, 18, 171);   
+    font-weight: bold;
+    border: 2px solid rgb(25, 18, 171);
+    padding: 5px;
+}
+
+nav{
+    float: right;
+}
+</style>

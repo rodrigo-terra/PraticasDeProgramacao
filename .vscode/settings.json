@@ -1,6 +1,7 @@
 {
     "workbench.tree.indent": 15,
     "editor.bracketPairColorization.enabled": true,
-    "editor.language.colorizedBracketPairs": 
+    "editor.language.colorizedBracketPairs": true,
+    "editor.lineHeight": 1.5,
     
 }
