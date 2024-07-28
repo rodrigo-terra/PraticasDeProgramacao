@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Estruturas de Condições</title>
+        <meta charset="UTF-8">
+
+        <script>
+
+            /*
+            Verificar o aumento de salário de acordo com o cargo
+            Estágiario = 100%
+            Analista = 50%
+            Gerente = 30%
+            Presidente = 10%
+            */
+            
+            const salario = prompt('Digite o salário:')
+            const cargo = prompt('Digite o cargo:')
+            let aumento = 0
+
+            switch(cargo)
+            {
+                case 'Estagiário':;     aumento = 2;         break;
+                case 'Analista':;       aumento = 1.5;       break;
+                case 'Gerente':;        aumento = 1.3;       break;
+                case 'Presidente':;     aumento = 1.1;       break;
+
+                default: alert('Escrever um cargo válido!')
+            }
+
+            // const novosalario = salario + (salario * aumento)
+            // const novosalario = salario * (1 + aumento)
+
+            const novosalario = salario * aumento
+
+            console.log("O novo salário é R$" + novosalario)
+
+        </script>
+
+    </head>
+
+    <body>
+
+
+
+    </body>
+
+</html>
