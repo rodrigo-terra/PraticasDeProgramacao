@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+
+    <script>
+
+        // Valores das constantes (Entradas)
+        const anoVotacao = Number(prompt('Digite o ano da Eleição'))
+        const anoNascimento = Number(prompt('Digite o nome em que nasceu'))
+        const idade = anoVotacao - anoNascimento
+
+        // Testes lógicos (Processamento e Saídas)
+        if(idade < 16){ // Teste para menores que não podem votar
+            console.log('Você não tem a idade mínima para votar. Idade: ' + idade + ' anos')
+        } else if(idade == 16 || idade == 17 || idade >= 65){ // Teste para menores e idosos que tem voto facultativo
+            console.log('Você pode ou não votar. É facultativo! Idade: ' + idade + ' anos')
+        } else if(idade >= 18 && idade < 64){ // Teste para faixa etária obrigada a votar
+            console.log('Você é obrigado a votar ou justificar! Idade: ' + idade + " anos")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
