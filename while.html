@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estruturas de repetição</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estruturas de repetição</title>
 
-    <script>
+        <script>
 
-    // Estutura para fazer a repetição através de "while"
-        let contador = 1 // Variável
-        const qtd = prompt('Insira quantas repetições deseja') // Opção de inserir a quantidade de repetições
+            // Estutura para fazer a repetição através de "while"
+            let contador = 1 // Variável
+            const qtd = prompt('Quantas Notas') // Chama o comando para inserir a quantidade de notas que serão colocadas
+            let soma = 0 // Soma todas as notas que serão inseridas
+            let nota = 0 // Recebe o valor da nota individual
 
-        while(contador <= qtd) // Função para fazer a contagem até o valor determinado
-    {
-        console.log(contador) // O que vai ser contado
-        // contador = contador + 1 // Encremento para adicionar uma quantia ao valor da variável até chgar no valor da função while
-        contador++ // É o encremento acima de uma forma diferente
-    }
+            while(contador <= qtd) // Função para fazer a contagem até o valor determinado
+            {
+            nota = Number(prompt('Digite a nota ' + contador)) // Chama o comando para digitar o valor da nota
+            soma = soma + nota // Calcula o valor de cada nota somando com as inseridas anteriormente
+            contador++ // Tras o total da soma
+            }
 
-    </script>
+            console.log('Soma: ' + soma)
+            console.log('Nota: ' + nota)
 
-</head>
+            // Mostrar a média e o resultado final, para saber se o aluno está Aprovado ou Reprovado
+            const media = soma/qtd
+            console.log('Média: ' + soma/qtd)
+
+            const resultado = media >= 7 ? 'Aprovado' : 'Reprovado'
+            console.log("Resultado: " + resultado)
+
+        </script>
+
+    </head>
 
 
-<body>
-    
-</body>
+    <body>
+        
+    </body>
 
 </html>
