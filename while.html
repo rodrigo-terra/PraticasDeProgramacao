@@ -16,9 +16,15 @@
 
             while(contador <= qtd) // Função para fazer a contagem até o valor determinado
             {
-            nota = Number(prompt('Digite a nota ' + contador)) // Chama o comando para digitar o valor da nota
-            soma = soma + nota // Calcula o valor de cada nota somando com as inseridas anteriormente
-            contador++ // Tras o total da soma
+                do /* Chama uma condição para executar e passar para os próximos passos. 
+                Se a condição não for atendida ele fica num processo de loop */
+                {
+                    nota = Number(prompt('Digite a nota ' + contador)) // Chama o comando para digitar o valor da nota
+                }
+                while(nota > 10) // Definição da condição para prosseguir 
+                
+                soma = soma + nota // Calcula o valor de cada nota somando com as inseridas anteriormente
+                contador++ // Tras o total da soma
             }
 
             console.log('Soma: ' + soma)
