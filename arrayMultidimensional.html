@@ -18,9 +18,27 @@
                 [5, 6, 9, 7]
             ]
 
+            const pessoa = {nome: 'Rodrigo Terra', telefone: '(340) 39432-2345', endereço: 'Rua Falcão'}
+
+            // 'array de objetos'
+            const pessoas = [
+                {nome: 'João Lima', telefone: '(351) 49523-4434', endereço: 'Rua Jaboti'},
+                {nome: 'Maria Pereira', telefone: '(546) 45603-5345', endereço: 'Rua Aurora'},
+                {nome: 'José Lacerda', telefone: '(585) 32158-9644', endereço: 'Rua Pinhão'},
+                {nome: 'Ana Martins', telefone: '(985) 86654-7435', endereço: 'Rua Tingui'}
+            ]
+
+            console.log(notas[1][2]) // Retorna o valor contido na 'linha 1' e 'coluna 2' do 'array notas'
+            console.table(pessoas) // Retona como tabela todas as informações dp 'array pessoas'
+            console.log(pessoas[2]['nome']) // Primeira maneira: devolve apenas a infomação do nome do objeto 2
+            console.log(pessoas[2].nome) // Segunda maneira: devolve apenas a infomação do nome do objeto 2
+            console.log(pessoas[3]) // Devolve todas as informações
+
+            /*
             console.log(nomes)
             console.log(idades)
             console.table(notas)
+            */
 
         </script>
 
