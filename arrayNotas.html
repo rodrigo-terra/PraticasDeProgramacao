@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArraysMultidimensional</title>
+
+        <script>
+            
+            const notas = [] // Declaração de um array vazio chamado 'notas'
+            const qtd = prompt('Digite a quantidade de notas a ser inserida.')
+
+            for(let i=0; i < qtd; i++){ // Inicia um loop que irá iterar 'qtd' vezes
+                let nota = prompt('Digite a nota!') // Solicita ao usuário para inserir uma nota e armazena na variável 'nota'
+                notas.push(nota) // Adiciona a nota inserida ao array 'notas'
+            }
+
+            console.table(notas) // Exibe o array 'notas' em formato de tabela no console do navegador
+
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+
+</html>
