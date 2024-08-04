@@ -10,17 +10,34 @@
 
             const carros = ['Gol', 'Fusca', 'Virtus', 'Ka']
 
+            carros.push('Fiesta') // Adiciona elementos no final da lista/tabela
+            carros.unshift('Pálio') // Adiciona elementos no início da lista/tabela
+
             console.table(carros) // Trás os elementos em tabela
 
-            carros.push('Fiesta') // Adiciona elementos no final da lista/tabela
+            /* 
+
+            'splice' serve para:
+            
+            Excluir itens a partir de uma posição
+            ex.: carros.splice(2, 3) -> exclui 3 itens a partir da 2 posição
+
+            Iserir itens a partir de uma posição
+            ex.: carros.splice(2, 0, 'Corsa') -> adiciona o item 'Corsa' na posição 3. Empurra os outros itens para baixo
+
+            Altera itens a parti de uma posição
+            ex.: carros.splice(1, 1, 'Parati') -> adiciona o item 'Parati' após apagar o item que lá estava 
+            
+            */
+
+            carros.splice(1, 1) // Irá na posição '1' e excluirá '1 elemento'
             console.table(carros)
 
-            carros.unshift('Pálio') // Adiciona elementos no início da lista/tabela
+            carros.splice(1, 0, 'Uno') // Irá na posição '1', não vai excluir elementos e adicionará o elemento 'Uno'
             console.table(carros)
 
-            const carro = carros.pop() // Retira o elemento do final e adiciona ele em uma variável
+            carros.splice(3, 1, 'Corola') // Irá na posição '3', vai excluir '1 elemento' e adicionará o elemento 'Corola' no lugar
             console.table(carros)
-            console.table(carro)
 
         </script>
 
