@@ -5,6 +5,11 @@
         <meta charset="UTF-8">
 
         <script type="text/javascript" src="js/funcoes.js"></script> <!-- Referncia o arquivo com a função --> 
+
+        <script>
+
+        </script>
+
     </head>
 
     <body>
@@ -13,10 +18,11 @@
         N1: <input type="text" id="n1" /><br>
         N2: <input type="text" id="n2" /><br>
 
-        <input type="button" value="Somar" onclick="somar()">
-        <input type="button" value="Subtrair" onclick="subtrair()">
-        <input type="button" value="Multiplicar" onclick="multiplicar()">
-        <input type="button" value="Dividir" onclick="dividir()">
+        <!-- Atualização da função a partir de Switch -->
+        <input type="button" value="Somar" onclick="calcular('+')">
+        <input type="button" value="Subtrair" onclick="calcular('-')">
+        <input type="button" value="Multiplicar" onclick="calcular('*')">
+        <input type="button" value="Dividir" onclick="calcular('/')">
         
         <h1 id="resultado">A soma dos números é </h1>
 

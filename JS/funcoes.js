@@ -1,35 +1,34 @@
-function somar(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
+function calcular(operacao){
+    const n1 = document.getElementById('n1').value // Atribui a variável do primeiro número
+    const n2 = document.getElementById('n2').value // Atribui a variável do segundo número
 
-    const soma = n1 + n2
+    let resultado // Chama o resultado para cada operação
+    switch(operacao){
+        case '+': resultado = somar(n1, n2); break;
+        case '-': resultado = subtrair(n1, n2); break;
+        case '*': resultado = multiplicar(n1, n2); break;
+        case '/': resultado = dividir(n1, n2); break;
+    }
+    document.getElementById('resultado').innerHTML = 'O resultado é ' + resultado // Mensagem acompanhada do resultado
+    }
 
-    document.getElementById('resultado').innerHTML = 'A soma dos números é ' + soma
+function somar(n1, n2){ // Função somar atualizada
+    return Number(n1) + Number(n2)
 }
 
-function subtrair(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
-
-    const subtrai = n1 - n2
-    
-    document.getElementById('resultado').innerHTML = 'A subtração dos números é ' + subtrai
+function subtrair(n1, n2){ // Função subtraie atualizada
+    return Number(n1) - Number(n2)
 }
 
-function multiplicar(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
-
-    const multiplica = n1 * n2
-    
-    document.getElementById('resultado').innerHTML = 'A multiplicação dos números é ' + multiplica
+function multiplicar(n1, n2){ // Função multiplicar atualizada
+    return Number(n1) * Number(n2)
 }
 
-function dividir(){
-    const n1 = Number(document.getElementById('n1').value)
-    const n2 = Number(document.getElementById('n2').value)
-
-    const divide = n1 / n2
-    
-    document.getElementById('resultado').innerHTML = 'A divisão dos números é ' + divide
+function dividir(n1, n2){ // Função dividir atualizada
+    if ( n2 == 0){ // Caso a divisão seja executada por "0" retorna o erro
+        console.error('Não é possível dividir numeros por 0')
+        return null
+    } else{
+    return Number(n1) / Number(n2)
+    }
 }
