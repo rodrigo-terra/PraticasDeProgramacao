@@ -12,6 +12,7 @@ function calcular(operacao){
     document.getElementById('resultado').innerHTML = 'O resultado é ' + resultado // Mensagem acompanhada do resultado
     }
 
+    // Função de declaração
 function somar(n1, n2){ // Função somar atualizada
     return Number(n1) + Number(n2)
 }
@@ -32,3 +33,12 @@ function dividir(n1, n2){ // Função dividir atualizada
     return Number(n1) / Number(n2)
     }
 }
+
+// Função de expressão
+const somaExpressao = function(n1, n2){
+    return n1 + n2
+}
+
+// Função de seta
+const somaArrow = (n1, n2) => n1 + n2
+console.log( somaArrow(31, 2) )
